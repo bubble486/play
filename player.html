@@ -24,10 +24,13 @@
     muted
     loop></audio>
     <script>
-        document.body.addEventListener('mousedown', function(){
-            vd.muted = false;
-        }, false);
+        // document.body.addEventListener('mousedown', function(){
+        //     vd.muted = false;
+        // }, false);
         // document.getElementById('vd').play();
+        window.onclick = function(){
+            vd.play();
+        }
     </script>
 
 
