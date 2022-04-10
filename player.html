@@ -5,22 +5,67 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <!-- <script>
-        function play(){
-            document.getElementById("vd").play();
+    <link rel="stylesheet" href="reset.css">
+    <style>
+        /* body{
+            background-color: antiquewhite;
+        } */
+        a{
+            text-decoration: none;
         }
-    </script> -->
+        .news-wrapper{
+            width: 300px;
+            height: 357px;
+            margin: 50px auto;
+            background-color: #fff;
+            border-top: 1px solid #ddd;
+        }
+        .news-title{
+            display: inline-block;
+            height: 30px;
+            border-top: 1px rgb(74, 184, 253) solid;
+            margin-top: -1px;
+            padding-top: 10px;
+        }
+        .news-title a{
+            text-decoration: none;
+            color: #40406B;
+            font-weight: bold;
+        }
+        .news-img{
+            height: 170px;
+        }
+        .news-img .img-title{
+            margin-top: -165px;
+            color: rgb(228, 190, 238);
+            padding-left: 15px;
+            font-weight: bold;
+        }
+        .news-list{
+            margin-top: 10px;
+            padding-left: 14px;
+            /* list-style: square; */
+        }
+        .news-list li{
+            margin-bottom: 17px;
+            
+        }
+        .news-list li a{
+            font-size: 14px;
+            color: #666;
+        }
+        .news-list li ::before{
+            content: '■';
+            color: rgb(174, 173, 173);
+            font-size: 12px;
+            margin-right: 4px;
+        }
+        .news-list li a:hover{
+            color:rgb(252, 192, 232);
+        }
+    </style>
 </head>
 <body>
-    <!-- 
-        audio 标签用来向页面中引入一个外部的音频文件
-            音频文件引用时,默认情况不允许用户自己控制播放停止
-        属性:
-        controls 是否允许用户控制播放
-        autoplay 音频是否自动播放
-            -如果设置了autoplay 则音乐在页面打开时候会自动播放,但时目前大部分浏览器不会对音乐进行播放
-        loop 循环播放
-    -->
     <script>
         alert("今天天气真好!");
         function play(){
@@ -32,10 +77,36 @@
     <div style="height: 2000px;width: 100%;" onclick="play()"></div>
     <audio
     id='vd'
-    src="https://bubble486.github.io/play/%E6%9B%BC%E6%AD%A5%20-%20%E3%80%8A%E5%BC%82%E4%BA%BAdisco%E3%80%8B%E6%BF%80%E8%90%8C%E5%AE%9D%E5%84%BF%E5%A7%90%E5%B7%9D%E5%91%B3%E7%89%88.mp3"
+    src="./茅野愛衣,戸松遥,早見沙織 - secret base _君がくれたもの_ (10 years after Ver.).mp3"
     loop></audio>
     
-
+    <div class="news-wrapper">
+        <h2 class="news-title">
+            <a href="#">面码 </a>
+        </h2>
+        <div class="news-img">
+            <a href="#">
+                <img src="../img/src=http___b-ssl.duitang.com_uploads_item_201607_19_20160719122121_ea23F.jpeg&refer=http___b-ssl.duitang.webp" alt="面码" width="100%">
+                <h3 class="img-title">
+                    超和平Buster！
+                </h3>
+            </a>
+        </div>
+        <ul class="news-list">
+            <li>
+                <a href="#">xxxxxx请自行脑补xxxxxx</a>
+            </li>
+            <li>
+                <a href="#">xxxxxx请自行脑补xxxxxx</a>
+            </li>
+            <li>
+                <a href="#">xxxxxx请自行脑补xxxxxx</a>
+            </li>
+            <li>
+                <a href="#">xxxxxx请自行脑补xxxxxx</a>
+            </li>
+        </ul>
+    </div>
 
     <!-- 除了通过 -->
 <!--     <audio controls>
@@ -47,6 +118,5 @@
     </audio> -->
 
     <!-- <video src="../source/VID_20200709_193006.mp4" height="500" controls></video> -->
-
 </body>
 </html>
