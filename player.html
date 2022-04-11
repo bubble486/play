@@ -77,9 +77,10 @@
         alert("今天天气真好!");
         // document.getElementById("vd").play();
         var audio = document.querySelector('#vd');
+        audio.play();
         //safari和微信
         document.addEventListener("WeixinJSBridgeReady", function () {
-        audio.play();
+            audio.play();
         }, false);
     </script>
     <div style="height: 1000px;width: 100%;">
