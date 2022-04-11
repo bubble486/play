@@ -74,14 +74,14 @@
     ></audio>
     <script>
         alert("今天天气真好!");
-        document.getElementById("vd").play();
+        // document.getElementById("vd").play();
         var audio = document.querySelector('#vd');
         //safari和微信
-        document.addEventListener("touchstart", function () {
+        document.addEventListener("WeixinJSBridgeReady", function () {
         audio.play();
         }, false);
     </script>
-    <div style="height: 1000px;width: 100%;" onclick="play()">
+    <div style="height: 1000px;width: 100%;">
         <div class="news-wrapper">
             <h2 class="news-title">
                 <a href="#">面码 </a>
